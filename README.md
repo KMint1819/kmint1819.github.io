@@ -1,8 +1,9 @@
 # Portfolio of Po-Wei Wang
 
 Hi, this page includes background including:
+- [ ] Basic Introduction
 - [ ] Work experience
-- [ ] Education
+<!-- - [ ] Education -->
 - [ ] My Projects
 - [ ] Awards
 - [ ] Skills
