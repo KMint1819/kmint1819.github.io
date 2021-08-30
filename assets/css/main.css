@@ -448,6 +448,10 @@ pre code {
     box-sizing: border-box;
 }
 
+.row>.col-half {
+    width: 50%;
+}
+
 .row.gtr-uniform>*> :last-child {
     margin-bottom: 0;
 }
@@ -1522,9 +1526,9 @@ pre code {
     .row>.off-11-xsmall {
         margin-left: 91.66667%;
     }
-    .row>.col-12-xsmall {
-        width: 100%;
-    }
+    /* .row>.col-12-xsmall {
+        width: 80%;
+    } */
     .row>.off-12-xsmall {
         margin-left: 100%;
     }
@@ -2426,7 +2430,7 @@ input[type="button"]:disabled,
 }
 
 .work-item p {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.5em;
     margin: 0;
 }

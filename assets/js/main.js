@@ -98,17 +98,17 @@
     // Lightbox gallery.
     $window.on('load', function() {
 
-        $('#lightbox').poptrox({
-            caption: function($a) { return $a.next('h3').text(); },
+        $('.lightbox').poptrox({
+            // caption: function($a) { return $a.next().next().next().text(); },
             overlayColor: '#2c2c2c',
             overlayOpacity: 0.85,
             popupCloserText: '',
             popupLoaderText: '',
-            selector: '.work-item a.image',
+            selector: 'a.pop',
             usePopupCaption: true,
-            usePopupDefaultStyling: false,
+            // usePopupDefaultStyling: false,
             usePopupEasyClose: false,
-            usePopupNav: true,
+            // usePopupNav: true,
             windowMargin: (breakpoints.active('<=small') ? 0 : 50)
         });
 
