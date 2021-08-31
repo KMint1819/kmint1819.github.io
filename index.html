@@ -42,7 +42,7 @@
         <section class="spotlight">
             <h2 class="title">Work experience</h2>
             <div class="spotlight-item style1">
-                <img src="images/lab.jpg">
+                <img class="logo" src="images/lab.jpg">
                 <div class="content">
                     <header class="title">
                         <h2 class="name">Research Assistant [Part-time to Full-time]</h2>
@@ -58,16 +58,15 @@
                     <ul>
                         <li>Involved most of the time in product development than researching although the title is "Research Assistant"</li>
                         <li>Cooperated with more than 3 companies</li>
-                        <li>Built more than 6 different software (Hit "Learn More" to see some of them!) </li>
-                    </ul>
-                    <ul class="actions stacked">
-                        <li><a href="#projects" class="button">Learn More</a></li>
+                        <li>Built more than 6 different software systems.
+                            <a href="#projects">Details</a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="spotlight-item style2">
-                <img src="images/sinbon.jpg">
+                <img class="logo" src="images/sinbon.jpg">
                 <div class="content">
                     <header class="title">
                         <h2 class="name">AI Engineer [Intern]</h2>
@@ -86,7 +85,7 @@
                 </div>
             </div>
             <div class="spotlight-item style1">
-                <img src="images/skyrec.png">
+                <img class="logo" src="images/skyrec.png">
                 <div class="content">
                     <header class="title">
                         <h2 class="name">Python Software Engineer [Intern]</h2>
@@ -128,14 +127,13 @@
                         <li>Used YOLO with other computer vision algorithms to detect rice plant from huge aerial shot (2000 x 3000 pixels)</li>
                         <li>Acheived 94.73% and 93.7% f1-score on public and private dataset, respectively</li>
                     </ul>
-                    <ul class="actions stacked">
-                        <li><a href="https://github.com/KMint1819/yolov5" class="button">Github Repo</a></li>
-                    </ul>
+
+                    <a href="https://github.com/KMint1819/yolov5" class="button">Github Repo</a>
                 </div>
             </div>
 
             <div class="spotlight-item style1">
-                <img src="images/awards/apple.jpg">
+                <img src="images/awards/iot.jpg">
                 <div class="content">
                     <header class="title">
                         <h2 class="name"><a href="https://niicc.cilab.csie.ncu.edu.tw/">Intelligent Innovation and Interdisciplinary Creation Contest</a></h2>
@@ -149,10 +147,11 @@
                     </header>
                     <ul>
                         <li><strong class="place">11th place</strong> out of 94 teams all over Taiwan</li>
-                        <li>Developed an Android application to automatically check market price of fruits and vegetables by taking photos using <strong class="skill">Tensorflow Lite</strong> and <strong class="skill">web scraping</strong></li>
+                        <li>Developed an Android application to automatically check market price of fruits and vegetables by taking photos using <strong class="skill">MobileNet</strong> and <strong class="skill">web scraping</strong></li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=LFBe8aOxO7A&ab_channel=Tzu-HsuanLin" class="button">Video Demo</a>
                     </ul>
                 </div>
-            </div>
 
         </section>
 
@@ -161,7 +160,7 @@
         <section id="projects" class="lightbox">
             <h2>Projects</h2>
             <div class="row">
-                <article class="col-half col-12-xsmall work-item">
+                <article class="col-half col-12-xsmall work-item style2">
                     <a href="http://youtu.be/Q8zC3-ZQFJI" data-poptrox="youtube,854x480" class="pop image fit thumb"><img src="images/vid.png" /></a>
                     <h3>Face Recognition Access Control System [Work]</h3>
                     <p>
@@ -171,10 +170,10 @@
                         <code>TensorRT</code>
                         <code>MongoDB</code>
                     </p>
-                    <p>Recognizes registered faces in real-time. Using Qt for GUI, MongoDB for storage, and TensorRT for inference engine with quantization for better performance</p>
+                    <p>Detects and recognizes registered faces through RTSP streams. Using Qt for GUI, MongoDB for storage, and TensorRT for inference engine with quantization for better performance</p>
                     <p>Achieved <strong>98% accuracy</strong> and <strong>4 fps</strong></p>
                 </article>
-                <article class="col-half col-12-xsmall work-item">
+                <article class="col-half col-12-xsmall work-item style1">
                     <a href="images/projects/anti-spoofing.png" class="pop image fit thumb"><img src="images/projects/anti-spoofing.png" /></a>
                     <h3>Face Anti-Spoofing System [Work]</h3>
                     <p>
@@ -188,7 +187,7 @@
                     <p>Acheived <strong>91.4%</strong> accuracy</p>
                 </article>
 
-                <article class="col-half col-12-xsmall work-item">
+                <article class="col-half col-12-xsmall work-item style1">
                     <a href="images/fulls/02.jpg" class="pop image fit thumb"><img src="images/tbd.png" alt="" /></a>
                     <h3>Speech Recognition Application [Work]</h3>
                     <p>
@@ -199,23 +198,39 @@
                     </p>
                     <p>Intercepts voice from a running application, recognizes it, then produce the caption of it. </p>
                 </article>
-                <article class="col-half col-12-xsmall work-item">
-                    <a href="images/fulls/03.jpg" class="pop image fit thumb"><img src="images/tbd.png" alt="" /></a>
-                    <h3>PINE</h3>
-                    <p>WEBBBBB</p>
+                <article class="col-half col-12-xsmall work-item style2">
+                    <a href="images/fulls/03.jpg" class="pop image fit thumb"><img src="images/projects/pine.jpg" alt="" /></a>
+                    <h3>PINE - Web-based machine learning model training platform [Special Project]</h3>
+                    <p>
+                        <code>MVC</code>
+                        <code>Python</code>
+                        <code>Node.js</code>
+                    </p>
+                    <p>A website for users to train machine learning models without coding. Applied to a company's production line to train their custom CNN model by reading instructions that took less than 5 minutes.</p>
+                    <p>Responsible for developing web-backend(Node.js), model training scripts(Python), and the interface between them.
+                    </p>
                 </article>
-                <article class="col-half col-12-xsmall work-item">
+                <article class="col-half col-12-xsmall work-item style2">
                     <a href="images/fulls/04.jpg" class="pop image fit thumb"><img src="images/tbd.png" alt="" /></a>
                     <h3>CnnLearn - Deep Learning Framework [Side-Project]</h3>
-                    <p>Learn CNN!</p>
+                    <p>
+                        <code>Python</code>
+                        <code>Deep Learning</code>
+                        <code>Unit test</code>
+                    </p>
+                    <p>A framework for building neural networks from scratch using only NumPy.</p>
+                    <p>Developed this framework in order to learn detailed and low-level knowledge of deep learning.</p>
+                    <div class="align-center">
+                        <a href="https://github.com/KMint1819/CnnLearn" class="button">Source Available Here!</a>
+                    </div>
                 </article>
-                <article class="col-half col-12-xsmall work-item">
+                <article class="col-half col-12-xsmall work-item style1">
                     <a href="images/fulls/05.jpg" class="pop image fit thumb"><img src="images/tbd.png" alt="" /></a>
                     <h3>Others</h3>
                     <p>Copy me!</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button">Don't click me</a></li>
-                    </ul>
+                    <div class="align-center">
+                        <a href="https://github.com/KMint1819/CnnLearn" class="button">Don't click me</a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -303,9 +318,7 @@
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
             </div>
-            <ul class="actions">
-                <li><a href="#" class="button">Full Portfolio</a></li>
-            </ul>
+            <a href="#" class="button">Full Portfolio</a>
         </section>
 
         <!-- Others -->
@@ -343,30 +356,28 @@
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
             </div>
-            <ul class="actions">
-                <li><a href="#" class="button">Full Portfolio</a></li>
-            </ul>
+            <a href="#" class="button">Full Portfolio</a>
         </section>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li>
-                    <a href="https://github.com/KMint1819/" class="icon brands fa-github"><span class="label ">Github</span></a></li>
-                <li><a href="https://linkedin.com/in/vincentwang1170" class="icon brands fa-linkedin "><span class="label ">Dribbble</span></a></li>
-            </ul>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/js/jquery.poptrox.min.js "></script>
-    <script src="assets/js/browser.min.js "></script>
-    <script src="assets/js/breakpoints.min.js "></script>
-    <script src="assets/js/util.js "></script>
-    <script src="assets/js/main.js "></script>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li>
+                        <a href="https://github.com/KMint1819/" class="icon brands fa-github"><span class="label ">Github</span></a></li>
+                    <li><a href="https://linkedin.com/in/vincentwang1170" class="icon brands fa-linkedin "><span class="label ">Dribbble</span></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js "></script>
+        <script src="assets/js/jquery.poptrox.min.js "></script>
+        <script src="assets/js/browser.min.js "></script>
+        <script src="assets/js/breakpoints.min.js "></script>
+        <script src="assets/js/util.js "></script>
+        <script src="assets/js/main.js "></script>
 
 </body>
 
