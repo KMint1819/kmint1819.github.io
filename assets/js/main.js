@@ -99,6 +99,7 @@
     $window.on('load', function() {
 
         $('.lightbox').poptrox({
+            caption: function($a) { return $a.next('h3').text(); },
             // caption: function($a) { return $a.next().next().next().text(); },
             overlayColor: '#2c2c2c',
             overlayOpacity: 0.85,
