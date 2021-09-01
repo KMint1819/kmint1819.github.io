@@ -476,7 +476,7 @@ pre code {
 .features li {
     width: calc(33.33333% - 2em);
     margin-left: 2em;
-    margin-top: 0em;
+    margin-top: 1em;
     padding: 0;
 }
 
