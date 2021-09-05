@@ -408,8 +408,20 @@ pre code {
     margin: 1em auto 1em auto;
 }
 
+.lightbox h2 {
+    margin: 0 0 0.2em 0;
+}
+
+.lightbox .tag {
+    margin: 0 0 1em 0;
+}
+
 
 /* spotlight */
+
+.spotlight-item h3 {
+    margin: 0 0 1em 0;
+}
 
 .style1 {
     background-color: rgb(255, 255, 255);
@@ -2692,9 +2704,9 @@ input[type="button"]:disabled,
     color: rgba(255, 255, 255, 0.5);
     height: 100%;
     left: 0;
-    padding: 2em 4em;
+    padding: 2em 3em 2em 4em;
     position: fixed;
-    text-align: right;
+    text-align: center;
     top: 0;
     width: 25%;
 }
@@ -2803,10 +2815,16 @@ input[type="button"]:disabled,
 
 .tag code {
     color: #acacac;
+    line-height: 2.2em;
+    /* margin: 0 1em 1em 0; */
 }
 
-#main h3 {
-    margin: 0 0 1em 0;
+#main h1 {
+    margin: 0 0 1.5em 0;
+    font-weight: bold;
+    font-size: 2.2em;
+    background-color: rgba(240, 240, 240, 0.856);
+    padding: 0.5em;
 }
 
 
